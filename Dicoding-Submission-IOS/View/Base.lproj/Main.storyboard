@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OoP-XP-2lB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profilku-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicoding_Submission_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profilku" id="lXR-Vq-MaB">
+                        <barButtonItem key="rightBarButtonItem" title="appreciate" image="rosette" catalog="system" id="aLR-wL-Ba7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="126.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JpI-xS-S4g">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OoP-XP-2lB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rpu-XL-l6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Nzb-c9-neC" kind="relationship" relationship="viewControllers" id="Ubs-To-WnO"/>
+                        <segue destination="dxf-wt-FUF" kind="relationship" relationship="viewControllers" id="Mux-YN-bQq"/>
+                        <segue destination="VhJ-Jn-sgh" kind="relationship" relationship="viewControllers" id="QPL-eY-eSG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbV-JI-yHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="NRk-Ba-Yh0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VhJ-Jn-sgh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle.fill" catalog="system" id="m3Z-h8-Pzp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iOR-y4-mWh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pjc-iC-sTC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3P0-92-QsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="pBO-71-S9B">
+            <objects>
+                <viewController id="Nzb-c9-neC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faJ-V0-4Hx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKR-oT-QpU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26384565230000001" green="0.26888185739999998" blue="0.6689242125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="twh-Nc-3iG" firstAttribute="bottom" secondItem="dKR-oT-QpU" secondAttribute="bottom" id="Ynr-Pj-hvo"/>
+                            <constraint firstItem="dKR-oT-QpU" firstAttribute="leading" secondItem="twh-Nc-3iG" secondAttribute="leading" id="b3c-Ri-7VG"/>
+                            <constraint firstItem="twh-Nc-3iG" firstAttribute="trailing" secondItem="dKR-oT-QpU" secondAttribute="trailing" id="n1H-cf-JFU"/>
+                            <constraint firstItem="dKR-oT-QpU" firstAttribute="top" secondItem="twh-Nc-3iG" secondAttribute="top" id="u99-n9-U7r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="twh-Nc-3iG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="bag.fill" catalog="system" id="pi1-c6-pyl">
+                        <color key="badgeColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ola-7z-g5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.13043478260875" y="892.63392857142856"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="RxQ-yc-xxp">
+            <objects>
+                <viewController storyboardIdentifier="GameboyViewControllerScene" id="dxf-wt-FUF" customClass="GameboyViewController" customModule="Dicoding_Submission_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8HJ-ew-d9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-wa-h1w">
+                                <rect key="frame" x="15" y="144" width="400" height="624"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-qC-Vbs">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="gameboy" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r76-zC-sk5">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="1eE-MQ-9lT"/>
+                                                    <constraint firstAttribute="width" constant="150" id="uX3-Ia-0gZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameboy Advance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-0a-eE7">
+                                                <rect key="frame" x="166" y="0.0" width="234" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Le-vf-9ue">
+                                        <rect key="frame" x="0.0" y="158" width="400" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="gameboy" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rE7-Vq-gWe">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="Jtb-ZP-WWr"/>
+                                                    <constraint firstAttribute="height" constant="150" id="nvn-Bc-QQi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameboy Advance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-Vy-1GJ">
+                                                <rect key="frame" x="166" y="0.0" width="234" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7pq-h5-Lkm">
+                                        <rect key="frame" x="0.0" y="316" width="400" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="gameboy" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojB-De-Vb0">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="cdF-cm-KiH"/>
+                                                    <constraint firstAttribute="height" constant="150" id="nvi-Af-Yfu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameboy Advance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ4-lO-jp9">
+                                                <rect key="frame" x="166" y="0.0" width="234" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-Sk-duD">
+                                        <rect key="frame" x="0.0" y="474" width="400" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="gameboy" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWn-hM-y28">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="QdN-aF-VWX"/>
+                                                    <constraint firstAttribute="height" constant="150" id="bq4-Qn-9nS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameboy Advance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22o-Hw-dir">
+                                                <rect key="frame" x="166" y="0.0" width="234" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2eh-3X-L78"/>
+                                    <constraint firstAttribute="height" constant="624" id="iim-wq-Lbl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fVf-wa-h1w" firstAttribute="centerX" secondItem="8HJ-ew-d9Q" secondAttribute="centerX" constant="8" id="3TH-sD-S51"/>
+                            <constraint firstItem="fVf-wa-h1w" firstAttribute="centerY" secondItem="8HJ-ew-d9Q" secondAttribute="centerY" constant="8" id="KZl-hE-erX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Xk-Qj-pL3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" image="creditcard" catalog="system" id="B6h-hA-LTY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsk-aj-hLF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="892.63392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LSO-zc-dtD">
+            <objects>
+                <viewController id="taD-gA-kMs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUj-KY-sZR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="challenges" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-EF-EQD">
+                                <rect key="frame" x="87" y="127" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dxt-e0-bkl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaY-Ip-aYP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="1594"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="challenges" width="21" height="21"/>
+        <image name="creditcard" catalog="system" width="128" height="91"/>
+        <image name="gameboy" width="626" height="626"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rosette" catalog="system" width="100" height="128"/>
+    </resources>
+</document>
