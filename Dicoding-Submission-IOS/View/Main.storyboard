@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1XE-Me-j8K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicoding_Submission_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mYA-45-pkj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mYA-45-pkj" secondAttribute="trailing" id="SfX-1t-fsf"/>
+                            <constraint firstItem="mYA-45-pkj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yuc-Wj-an6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mYA-45-pkj" secondAttribute="bottom" id="dnc-Pd-hw3"/>
+                            <constraint firstItem="mYA-45-pkj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v1O-kZ-IBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NSP-UL-M7B"/>
+                    <connections>
+                        <outlet property="heroTableView" destination="mYA-45-pkj" id="prv-6s-lEw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
+        </scene>
+        <!--Catalog-->
+        <scene sceneID="eTK-Ji-Lmv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fm6-xN-AOb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Catalog" image="bag.fill" catalog="system" id="tq4-WH-PIk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RCj-8c-waO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I87-YG-ZyT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBq-bN-inY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mz6-X7-i0a">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1XE-Me-j8K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zr0-2b-ZeR">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fm6-xN-AOb" kind="relationship" relationship="viewControllers" id="4Pe-mE-IVP"/>
+                        <segue destination="leZ-LP-btM" kind="relationship" relationship="viewControllers" id="UNG-Ib-AMP"/>
+                        <segue destination="jAv-ib-Xq8" kind="relationship" relationship="viewControllers" id="gA1-lQ-YTn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XwC-eF-76f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Profileku-->
+        <scene sceneID="Fdp-Lq-e5f">
+            <objects>
+                <viewController id="Boe-yv-1fk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ras-Cj-9a7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDL-Tw-iXJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="gr2-p8-AFU"/>
+                                    <constraint firstAttribute="width" constant="414" id="pKl-2f-2d6"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="rz0-aY-PG5" kind="embed" id="evP-OF-zVc"/>
+                                </connections>
+                            </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="aek-AG-Pbb">
+                                <rect key="frame" x="57" y="238" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1iQ-hY-cRh"/>
+                                    <constraint firstAttribute="height" constant="150" id="SV0-JF-7BD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="xrq-Sr-M0W">
+                                <rect key="frame" x="59" y="405" width="296.5" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BEx-XW-VNk">
+                                        <rect key="frame" x="0.0" y="1.5" width="50" height="47"/>
+                                        <color key="tintColor" red="0.26384565230000001" green="0.26888185739999998" blue="0.6689242125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IGx-3d-0Vw"/>
+                                            <constraint firstAttribute="width" constant="50" id="uj8-dg-Xqn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inggih Wicaksono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTc-KU-2sK">
+                                        <rect key="frame" x="67" y="0.0" width="229.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-FP-4kJ">
+                                <rect key="frame" x="59" y="463" width="298.5" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="envelope.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PJp-tc-DnS">
+                                        <rect key="frame" x="0.0" y="1.5" width="50" height="46.5"/>
+                                        <color key="tintColor" red="0.26384565230000001" green="0.26888185739999998" blue="0.6689242125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HJf-MQ-mU3"/>
+                                            <constraint firstAttribute="width" constant="50" id="Ljg-Gg-Wnn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="igihcksn@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKT-dW-BGS">
+                                        <rect key="frame" x="67" y="0.0" width="231.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-L4-M7r">
+                                <rect key="frame" x="20" y="537" width="374" height="257"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lDL-Tw-iXJ" firstAttribute="centerX" secondItem="ras-Cj-9a7" secondAttribute="centerX" id="355-Ab-xjx"/>
+                            <constraint firstItem="xrq-Sr-M0W" firstAttribute="leading" secondItem="QQ2-FP-4kJ" secondAttribute="leading" id="4xl-sW-aIH"/>
+                            <constraint firstItem="aek-AG-Pbb" firstAttribute="top" secondItem="NdN-FK-fc5" secondAttribute="top" constant="150" id="7JL-L7-gOM"/>
+                            <constraint firstItem="JzX-L4-M7r" firstAttribute="top" secondItem="QQ2-FP-4kJ" secondAttribute="bottom" constant="24" id="9ec-jV-8Lb"/>
+                            <constraint firstItem="QQ2-FP-4kJ" firstAttribute="top" secondItem="xrq-Sr-M0W" secondAttribute="bottom" constant="8" id="NDQ-kd-RDz"/>
+                            <constraint firstItem="xrq-Sr-M0W" firstAttribute="top" secondItem="aek-AG-Pbb" secondAttribute="bottom" constant="17" id="TzR-KW-kfp"/>
+                            <constraint firstItem="xrq-Sr-M0W" firstAttribute="centerX" secondItem="aek-AG-Pbb" secondAttribute="centerX" id="YE1-oD-Fsw"/>
+                            <constraint firstItem="NdN-FK-fc5" firstAttribute="trailing" secondItem="JzX-L4-M7r" secondAttribute="trailing" constant="20" id="ZAa-UL-HiX"/>
+                            <constraint firstItem="aek-AG-Pbb" firstAttribute="centerX" secondItem="lDL-Tw-iXJ" secondAttribute="centerX" id="iC7-ob-3tI"/>
+                            <constraint firstItem="NdN-FK-fc5" firstAttribute="bottom" secondItem="JzX-L4-M7r" secondAttribute="bottom" constant="19" id="ihK-5d-Oex"/>
+                            <constraint firstItem="lDL-Tw-iXJ" firstAttribute="top" secondItem="NdN-FK-fc5" secondAttribute="top" id="k5w-5q-Sc2"/>
+                            <constraint firstItem="JzX-L4-M7r" firstAttribute="leading" secondItem="NdN-FK-fc5" secondAttribute="leading" constant="20" id="k6W-Sr-L5B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NdN-FK-fc5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profileku" id="cQh-6Z-BSr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-DO-RXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="1700"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UE4-rl-fri">
+            <objects>
+                <viewController id="uZR-rh-5g5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wdq-KO-875">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-KJ-Rmp">
+                                <rect key="frame" x="8" y="86" width="398" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-op-OYt">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="241"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nes" translatesAutoresizingMaskIntoConstraints="NO" id="ucw-VX-xRf">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="5Ud-HB-boQ"/>
+                                                    <constraint firstAttribute="height" constant="200" id="9oC-UF-y9W"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zey-Jj-odO">
+                                                <rect key="frame" x="82" y="207" width="36" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="NES">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="fNX-pL-APj" kind="presentation" id="psn-Qc-0Bj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="T61-PT-SkQ">
+                                        <rect key="frame" x="231" y="0.0" width="167" height="241"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3ds" translatesAutoresizingMaskIntoConstraints="NO" id="x9x-qQ-drc">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="STy-U0-0uZ"/>
+                                                    <constraint firstAttribute="width" constant="200" id="uRc-su-fPT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFK-Po-bAl">
+                                                <rect key="frame" x="65" y="207" width="37" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="3DS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="3Jy-1m-0uV" kind="presentation" id="hUh-pM-pFE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="x9x-qQ-drc" firstAttribute="leading" secondItem="T61-PT-SkQ" secondAttribute="leading" id="lfR-s2-TSA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Z4s-lq-po8">
+                                <rect key="frame" x="8" y="347" width="386" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="64a-J5-AeF">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="241"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wii" translatesAutoresizingMaskIntoConstraints="NO" id="kvw-dg-Wx5">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="9QN-v4-nc6"/>
+                                                    <constraint firstAttribute="width" constant="200" id="R23-LD-Mdd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7da-nn-zwP">
+                                                <rect key="frame" x="85" y="207" width="30" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="WIi">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="SZ7-gt-4k5" kind="presentation" id="P0s-VO-WUv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nn8-SS-fZg">
+                                        <rect key="frame" x="206" y="0.0" width="180" height="241"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="switch" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-gP-g0C">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="rLe-bh-Trh"/>
+                                                    <constraint firstAttribute="width" constant="180" id="x5e-6k-sM4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iN5-ED-atS">
+                                                <rect key="frame" x="60" y="207" width="60" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Switch">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Ek3-oE-xXu" kind="presentation" id="Gyp-1h-wNG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="I5A-gP-g0C" firstAttribute="leading" secondItem="nn8-SS-fZg" secondAttribute="leading" id="hJv-qW-9gT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26384565230000001" green="0.26888185739999998" blue="0.6689242125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yln-KJ-Rmp" firstAttribute="leading" secondItem="8yT-wF-Cgg" secondAttribute="leading" constant="8" id="024-jy-OVb"/>
+                            <constraint firstItem="Z4s-lq-po8" firstAttribute="top" secondItem="Yln-KJ-Rmp" secondAttribute="bottom" constant="20" id="Xpm-bl-zbb"/>
+                            <constraint firstItem="8yT-wF-Cgg" firstAttribute="trailing" secondItem="Yln-KJ-Rmp" secondAttribute="trailing" constant="8" id="iax-3E-MRi"/>
+                            <constraint firstItem="Yln-KJ-Rmp" firstAttribute="top" secondItem="Wdq-KO-875" secondAttribute="top" constant="86" id="j5D-eC-h2n"/>
+                            <constraint firstItem="Z4s-lq-po8" firstAttribute="leading" secondItem="8yT-wF-Cgg" secondAttribute="leading" constant="8" id="rln-Y1-zCb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8yT-wF-Cgg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1M8-6g-ydA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLL-yv-uoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459.4202898550725" y="1699.5535714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IoT-AJ-ZXR">
+            <objects>
+                <viewController storyboardIdentifier="NesDetailView" id="fNX-pL-APj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wej-dh-4ew">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo Entertaiment System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-CO-pAw">
+                                <rect key="frame" x="28" y="251" width="359" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1l-QB-cpI">
+                                <rect key="frame" x="20" y="244" width="374" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Nintendo Entertainment System, atau NES, adalah sebuah konsol permainan video 8-bit yang dirilis oleh Nintendo di Amerika Utara, Eropa dan Australia pada tahun 1984.di Amerika Utara, Brasil, Eropa, Asia dan Australia pada tahun 1984. Sebelumnya, versi Jepangnya dikenal dengan nama Nintendo Family Computer atau Famicom telah dirilis pada tahun 1983 dan didistribusikan di beberapa negara seperti Cina, Vietnam, Singapura, Timur Tengah dan Hong Kong. Di Korea Selatan, itu dikenal sebagai Comboy Hyundai dan didistribusikan oleh Hyundai Electronics. Sedangkan di Rusia, diproduksi secara tamap lisensi dengan nama Dendy (bahasa Rusia: Денди). Demikian pula di India, NES diproduksi tanpa lisensi dan sangat populer dengan nama Little Guru dan Wiz Kid [1]. Kasus yang sama terjadi juga di Polandia yang disebut dengan Pegasus.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nes" translatesAutoresizingMaskIntoConstraints="NO" id="xOK-v7-5dS">
+                                <rect key="frame" x="82" y="40" width="250" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lU7-8W-M3H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkj-DC-ZBU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1250.7246376811595" y="2430.1339285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PhI-sx-2QT">
+            <objects>
+                <viewController id="3Jy-1m-0uV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rxB-pp-lTN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3ds" translatesAutoresizingMaskIntoConstraints="NO" id="cXG-eU-pWw">
+                                <rect key="frame" x="20" y="31" width="168" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3ds-xl" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-Ck-jlJ">
+                                <rect key="frame" x="226" y="31" width="168" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3ds-new" translatesAutoresizingMaskIntoConstraints="NO" id="iIn-3d-O3r">
+                                <rect key="frame" x="123" y="179" width="168" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo 3DS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hm-bA-oN4">
+                                <rect key="frame" x="126" y="339" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ4-re-gik">
+                                <rect key="frame" x="20" y="270" width="374" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Nintendo 3DS (ニンテンドー3DS, Nintendo Suri Di Esu) Adalah konsol game portabel berikutnya oleh Nintendo, yang dapat menghasilkan "efek 3D tanpa perlu memakai kacamata khusus", suatu proses yang disebut autostereoskopi . Dijadwalkan untuk diluncurkan pada tahun fiskal yang berakhir 31 Maret 2011, konsol ini akan menyukseskan konsol portabel Nintendo DS yang berbagi saham konsol portabel Sony PSP (PlayStation Portable) .Nintendo 3DS memiliki serangkaian perangkat lunak Nintendo DS, termasuk perangkat lunak DSI.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lcm-KQ-bPf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPN-05-nv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468.11594202898556" y="2430.1339285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Aeh-aE-Ooa">
+            <objects>
+                <viewController id="SZ7-gt-4k5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqh-x0-ObC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wii" translatesAutoresizingMaskIntoConstraints="NO" id="43b-79-7mS">
+                                <rect key="frame" x="11" y="68" width="192" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wiiu" translatesAutoresizingMaskIntoConstraints="NO" id="gNY-OO-STG">
+                                <rect key="frame" x="211" y="68" width="192" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo WII" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRW-Hg-KnV">
+                                <rect key="frame" x="131" y="248" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-Nv-Seh">
+                                <rect key="frame" x="14" y="248" width="380" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Wii adalah konsol permainan video kelima Nintendo yang merupakan penerus Nintendo GameCube. Inovasi utamanya adalah kontroler (joystick) yang merespon terhadap letaknya dalam ruang fisik tiga dimensi yang terletak di depan televisi. Pada tahap awal pengembangan, konsol ini diberi nama Revolution.
+
+Konsol ini diperkenalkan dalam Tokyo Game Show 2005 pada 16 September 2005. Konsol ini dirilis pada November 2006 di AS dan Desember di Jepang dan beberapa wilayah lainnya, dan bersaing dengan PlayStation 3 dan Xbox 360.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yRm-4X-cDG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fv1-6f-Woo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.75362318840581" y="2429.4642857142858"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="kVI-ka-idf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jAv-ib-Xq8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="Ata-MT-QmG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YQN-34-P8b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Boe-yv-1fk" kind="relationship" relationship="rootViewController" id="hEN-sn-QeZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmH-7v-WK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="965.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rx0-I5-clM">
+            <objects>
+                <viewController id="rz0-aY-PG5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u3q-tO-EIw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.26384565230000001" green="0.26888185739999998" blue="0.6689242125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yiv-fL-SEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="1479"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="a5G-4U-i06">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="leZ-LP-btM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Category" image="rectangle.grid.2x2.fill" catalog="system" id="V1f-DW-eVw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VwE-vo-fpY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uZR-rh-5g5" kind="relationship" relationship="rootViewController" id="RAR-wd-xlS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqM-F7-J3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459.4202898550725" y="965.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FgJ-bP-dQ5">
+            <objects>
+                <viewController id="Ek3-oE-xXu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgE-ZR-qPV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="switch" translatesAutoresizingMaskIntoConstraints="NO" id="ReZ-75-Fih">
+                                <rect key="frame" x="87" y="72" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nintendo Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvI-f6-282">
+                                <rect key="frame" x="110" y="243" width="194" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Med-9m-oRy">
+                                <rect key="frame" x="20" y="298" width="374" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Nintendo Switch adalah konsol permainan video yang dikembangkan oleh Nintendo , dirilis di seluruh dunia di sebagian besar wilayah pada 3 Maret 2017.  Ini adalah konsol hibrida yang dapat digunakan sebagai konsol rumah dan perangkat portabel. Pengontrol nirkabel Joy-Con , dengan tombol standar dan stik analog terarah untuk input pengguna, pengindraan gerak, dan umpan balik sentuhan, dapat dipasang pada kedua sisi konsol untuk mendukung permainan gaya genggam . Mereka juga dapat terhubung ke aksesori pegangan untuk memberikan bentuk gamepad konsol rumah tradisional, atau digunakan secara terpisah di tangan seperti Wii Remote dan Nunchuk , mendukung mode multiplayer lokal. Perangkat lunak Nintendo Switch mendukung permainan online melalui konektivitas Internet, serta konektivitas ad hoc nirkabel lokal dengan konsol lain. Game dan perangkat lunak Nintendo Switch tersedia di kedua kartrid ROM berbasis flash fisik dan distribusi digital melalui Nintendo eShop ; sistem tidak memiliki penguncian wilayah . Revisi sistem yang berfokus pada genggam, yang disebut Nintendo Switch Lite , dirilis pada 20 September 2019.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98522454500000001" green="0.80035275220000002" blue="0.36930951480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kW1-2M-3pq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyy-EQ-6v5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="2429.4642857142858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3ds" width="1132" height="1024"/>
+        <image name="3ds-new" width="771" height="650"/>
+        <image name="3ds-xl" width="2048" height="1536"/>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="nes" width="1600" height="869"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="profile" width="3375" height="2768"/>
+        <image name="rectangle.grid.2x2.fill" catalog="system" width="128" height="99"/>
+        <image name="switch" width="512" height="227"/>
+        <image name="wii" width="1800" height="1800"/>
+        <image name="wiiu" width="512" height="286"/>
+    </resources>
+</document>

@@ -7,30 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B38FE27924A3C362008C046E /* NintendoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE27724A3C362008C046E /* NintendoTableViewCell.swift */; };
-		B38FE27A24A3C362008C046E /* NintendoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38FE27824A3C362008C046E /* NintendoTableViewCell.xib */; };
-		B38FE27F24A3D002008C046E /* Nintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE27E24A3D001008C046E /* Nintendo.swift */; };
-		B38FE28124A3D020008C046E /* ProductNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE28024A3D020008C046E /* ProductNintendo.swift */; };
-		B3D1B0DC24A25AE000655B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D1B0DB24A25AE000655B56 /* AppDelegate.swift */; };
-		B3D1B0DE24A25AE000655B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D1B0DD24A25AE000655B56 /* SceneDelegate.swift */; };
-		B3D1B0E024A25AE000655B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D1B0DF24A25AE000655B56 /* ViewController.swift */; };
-		B3D1B0E324A25AE000655B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D1B0E124A25AE000655B56 /* Main.storyboard */; };
-		B3D1B0E524A25AE300655B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D1B0E424A25AE300655B56 /* Assets.xcassets */; };
-		B3D1B0E824A25AE300655B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D1B0E624A25AE300655B56 /* LaunchScreen.storyboard */; };
+		B38FE2D524A401A1008C046E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2D324A401A1008C046E /* Hero.swift */; };
+		B38FE2D624A401A1008C046E /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2D424A401A1008C046E /* DummyHeroes.swift */; };
+		B38FE2DB24A401AE008C046E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38FE2D724A401AE008C046E /* DetailViewController.xib */; };
+		B38FE2DC24A401AE008C046E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38FE2D824A401AE008C046E /* Main.storyboard */; };
+		B38FE2DD24A401AE008C046E /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38FE2D924A401AE008C046E /* HeroTableViewCell.xib */; };
+		B38FE2DE24A401AE008C046E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38FE2DA24A401AE008C046E /* LaunchScreen.storyboard */; };
+		B38FE2E124A401B8008C046E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2DF24A401B8008C046E /* SceneDelegate.swift */; };
+		B38FE2E224A401B8008C046E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2E024A401B8008C046E /* AppDelegate.swift */; };
+		B38FE2E624A401C3008C046E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2E324A401C3008C046E /* ViewController.swift */; };
+		B38FE2E724A401C3008C046E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2E424A401C3008C046E /* DetailViewController.swift */; };
+		B38FE2E824A401C3008C046E /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FE2E524A401C3008C046E /* HeroTableViewCell.swift */; };
+		B38FE2EA24A401FF008C046E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38FE2E924A401FF008C046E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B38FE27724A3C362008C046E /* NintendoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoTableViewCell.swift; sourceTree = "<group>"; };
-		B38FE27824A3C362008C046E /* NintendoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NintendoTableViewCell.xib; sourceTree = "<group>"; };
-		B38FE27E24A3D001008C046E /* Nintendo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nintendo.swift; sourceTree = "<group>"; };
-		B38FE28024A3D020008C046E /* ProductNintendo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNintendo.swift; sourceTree = "<group>"; };
+		B38FE2D224A401A0008C046E /* Dicoding-Submission-IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dicoding-Submission-IOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		B38FE2D324A401A1008C046E /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		B38FE2D424A401A1008C046E /* DummyHeroes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		B38FE2D724A401AE008C046E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		B38FE2D824A401AE008C046E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B38FE2D924A401AE008C046E /* HeroTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		B38FE2DA24A401AE008C046E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B38FE2DF24A401B8008C046E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../../a171-ios-pemula-labs/MyHeroApp/MyHeroApp/Base/SceneDelegate.swift"; sourceTree = "<group>"; };
+		B38FE2E024A401B8008C046E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../../../a171-ios-pemula-labs/MyHeroApp/MyHeroApp/Base/AppDelegate.swift"; sourceTree = "<group>"; };
+		B38FE2E324A401C3008C046E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../a171-ios-pemula-labs/MyHeroApp/MyHeroApp/Controller/ViewController.swift"; sourceTree = "<group>"; };
+		B38FE2E424A401C3008C046E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B38FE2E524A401C3008C046E /* HeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		B38FE2E924A401FF008C046E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D1B0D824A25AE000655B56 /* Dicoding-Submission-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicoding-Submission-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D1B0DB24A25AE000655B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3D1B0DD24A25AE000655B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3D1B0DF24A25AE000655B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3D1B0E224A25AE000655B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B3D1B0E424A25AE300655B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3D1B0E724A25AE300655B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D1B0E924A25AE300655B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,8 +53,9 @@
 		B38FE27424A3A8AC008C046E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B3D1B0DF24A25AE000655B56 /* ViewController.swift */,
-				B38FE27724A3C362008C046E /* NintendoTableViewCell.swift */,
+				B38FE2E424A401C3008C046E /* DetailViewController.swift */,
+				B38FE2E524A401C3008C046E /* HeroTableViewCell.swift */,
+				B38FE2E324A401C3008C046E /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -57,8 +63,8 @@
 		B38FE27B24A3CF84008C046E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B3D1B0DB24A25AE000655B56 /* AppDelegate.swift */,
-				B3D1B0DD24A25AE000655B56 /* SceneDelegate.swift */,
+				B38FE2E024A401B8008C046E /* AppDelegate.swift */,
+				B38FE2DF24A401B8008C046E /* SceneDelegate.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -66,9 +72,10 @@
 		B38FE27C24A3CFA4008C046E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B3D1B0E124A25AE000655B56 /* Main.storyboard */,
-				B38FE27824A3C362008C046E /* NintendoTableViewCell.xib */,
-				B3D1B0E624A25AE300655B56 /* LaunchScreen.storyboard */,
+				B38FE2D724A401AE008C046E /* DetailViewController.xib */,
+				B38FE2D924A401AE008C046E /* HeroTableViewCell.xib */,
+				B38FE2DA24A401AE008C046E /* LaunchScreen.storyboard */,
+				B38FE2D824A401AE008C046E /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,8 +83,9 @@
 		B38FE27D24A3CFD0008C046E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B38FE27E24A3D001008C046E /* Nintendo.swift */,
-				B38FE28024A3D020008C046E /* ProductNintendo.swift */,
+				B38FE2D424A401A1008C046E /* DummyHeroes.swift */,
+				B38FE2D324A401A1008C046E /* Hero.swift */,
+				B38FE2D224A401A0008C046E /* Dicoding-Submission-IOS-Bridging-Header.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,12 +109,12 @@
 		B3D1B0DA24A25AE000655B56 /* Dicoding-Submission-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				B38FE27B24A3CF84008C046E /* Base */,
 				B38FE27D24A3CFD0008C046E /* Model */,
 				B38FE27C24A3CFA4008C046E /* View */,
-				B38FE27B24A3CF84008C046E /* Base */,
 				B38FE27424A3A8AC008C046E /* Controller */,
-				B3D1B0E424A25AE300655B56 /* Assets.xcassets */,
 				B3D1B0E924A25AE300655B56 /* Info.plist */,
+				B38FE2E924A401FF008C046E /* Assets.xcassets */,
 			);
 			path = "Dicoding-Submission-IOS";
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 				TargetAttributes = {
 					B3D1B0D724A25AE000655B56 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -169,10 +178,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38FE27A24A3C362008C046E /* NintendoTableViewCell.xib in Resources */,
-				B3D1B0E824A25AE300655B56 /* LaunchScreen.storyboard in Resources */,
-				B3D1B0E524A25AE300655B56 /* Assets.xcassets in Resources */,
-				B3D1B0E324A25AE000655B56 /* Main.storyboard in Resources */,
+				B38FE2DC24A401AE008C046E /* Main.storyboard in Resources */,
+				B38FE2DB24A401AE008C046E /* DetailViewController.xib in Resources */,
+				B38FE2DE24A401AE008C046E /* LaunchScreen.storyboard in Resources */,
+				B38FE2DD24A401AE008C046E /* HeroTableViewCell.xib in Resources */,
+				B38FE2EA24A401FF008C046E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,35 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38FE27924A3C362008C046E /* NintendoTableViewCell.swift in Sources */,
-				B38FE27F24A3D002008C046E /* Nintendo.swift in Sources */,
-				B38FE28124A3D020008C046E /* ProductNintendo.swift in Sources */,
-				B3D1B0E024A25AE000655B56 /* ViewController.swift in Sources */,
-				B3D1B0DC24A25AE000655B56 /* AppDelegate.swift in Sources */,
-				B3D1B0DE24A25AE000655B56 /* SceneDelegate.swift in Sources */,
+				B38FE2E624A401C3008C046E /* ViewController.swift in Sources */,
+				B38FE2E224A401B8008C046E /* AppDelegate.swift in Sources */,
+				B38FE2D624A401A1008C046E /* DummyHeroes.swift in Sources */,
+				B38FE2E724A401C3008C046E /* DetailViewController.swift in Sources */,
+				B38FE2D524A401A1008C046E /* Hero.swift in Sources */,
+				B38FE2E824A401C3008C046E /* HeroTableViewCell.swift in Sources */,
+				B38FE2E124A401B8008C046E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B3D1B0E124A25AE000655B56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3D1B0E224A25AE000655B56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B3D1B0E624A25AE300655B56 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3D1B0E724A25AE300655B56 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B3D1B0EA24A25AE300655B56 /* Debug */ = {
@@ -332,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Dicoding-Submission-IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,6 +333,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.igihcksn.Dicoding-Submission-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dicoding-Submission-IOS/Model/Dicoding-Submission-IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Dicoding-Submission-IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,6 +353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.igihcksn.Dicoding-Submission-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dicoding-Submission-IOS/Model/Dicoding-Submission-IOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
