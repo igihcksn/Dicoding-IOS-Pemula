@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-DO-RXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="1700"/>
+            <point key="canvasLocation" x="2883" y="966"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UE4-rl-fri">
@@ -455,7 +455,7 @@ Konsol ini diperkenalkan dalam Tokyo Game Show 2005 pada 16 September 2005. Kons
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yiv-fL-SEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="1479"/>
+            <point key="canvasLocation" x="3664" y="745"/>
         </scene>
         <!--Category-->
         <scene sceneID="a5G-4U-i06">
